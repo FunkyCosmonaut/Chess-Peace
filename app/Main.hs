@@ -1,4 +1,11 @@
 module Main where
-
+import Render.Render
+import Graphics.UI.GLUT
+ 
 main :: IO ()
-main = putStrLn "Hello, Haskell!"
+main = do
+  (_progName, _args) <- getArgsAndInitialize
+  _window <- createWindow "Test Window"
+  displayCallback $= display
+  mainLoop
+ 
