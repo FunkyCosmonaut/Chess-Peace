@@ -1,5 +1,5 @@
 module Main where
-import Render.Render
+import Render.Window
 import Graphics.UI.GLUT
  
 main :: IO ()
